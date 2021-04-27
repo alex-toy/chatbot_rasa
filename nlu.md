@@ -13,3 +13,11 @@
 - Please suggest me a good laptop
 - I wanted to purchase a phone
 - Can you recommend me a laptop
+
+
+## intent:latest_news_phones_laptop
+- whats the latest news with phones
+- can you tell me about the trends regarding phones
+- what's going on in the tech world for laptops
+- 
+
