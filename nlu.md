@@ -15,8 +15,8 @@
 - Can you recommend me a [laptop](category)
 - Can you suggest me a [laptop](category)
 - I'm interested in purchasing a [phone](category)
-- I wanna buy a [phone](category)
-- give me some recommandations for [mobile phones](category)
+- I wanna buy a [mobile]{"entity" : "category", "value" : "phone"}
+- give me some recommandations for [mobile]{"entity" : "category", "value" : "phone"}
 
 
 ## intent:latest_news_phones_laptop

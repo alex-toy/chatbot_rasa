@@ -1,8 +1,9 @@
 language: en_core_web_md
 pipeline :
-  - name : WhitespaceTokenizer
+  - name : SpacyTokenizer
   - name : CountVectorsFeaturizer
   - name : DIETClassifier
     epochs : 200
     random_seed : 2
+  - name : EntitySynonymMapper
 
