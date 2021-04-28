@@ -17,6 +17,9 @@
 - I'm interested in purchasing a [phone](category)
 - I wanna buy a [mobile]{"entity" : "category", "value" : "phone"}
 - give me some recommandations for [mobile]{"entity" : "category", "value" : "phone"}
+- I wanted to buy a [refrigerator](category)
+- show me a good [air conditioner](category)
+- please recommend me a [washing machine](category)
 
 
 ## intent:latest_news_phones_laptop
