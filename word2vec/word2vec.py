@@ -26,14 +26,13 @@ if __name__ == "__main__":
 
     #print(sentence_stream[0][0:10])
 
-
+    #bigram = Phrases(sentence_stream, min_count=2,threshold = 5, delimiter=b' ')
     bigram = Phrases(
         sentence_stream, 
         min_count=2, 
         threshold=5, 
         connector_words=ENGLISH_CONNECTOR_WORDS
     )
-    #bigram = Phrases(sentence_stream, min_count=2,threshold = 5, delimiter=b' ')
     bigram_phraser = Phraser(bigram)
 
     tokens_list = []
@@ -60,5 +59,5 @@ if __name__ == "__main__":
 
     bindata = bytearray(data)
 
-    with gzip.open("word2vec_shopping.txt.gz",'wb') as f:
+    with gzip.open("word2vec/word2vec_shopping.txt.gz",'wb') as f:
         f.write(bindata)

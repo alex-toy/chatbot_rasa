@@ -2,3 +2,6 @@
 
 word2vec/*
 !word2vec/word2vec.py
+
+models/*
+!models/README.md
