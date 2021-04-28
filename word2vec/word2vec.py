@@ -43,8 +43,22 @@ if __name__ == "__main__":
     
     #print(tokens_list[0:5])
 
-    model = Word2Vec(tokens_list, size=200, window=5)
+    model = Word2Vec(
+        tokens_list, 
+        vector_size=200, 
+        window=5
+    )
 
     most_similar_lens = model.wv.most_similar('lens')
 
-    print(most_similar_lens)
+    #print(most_similar_lens)
+
+    model.wv.save_word2vec_format("word2vec/word2vec_shopping.txt")
+
+    fp = open("word2vec/word2vec_shopping.txt",'rb')
+    data = fp.read()
+
+    bindata = bytearray(data)
+
+    with gzip.open("word2vec_shopping.txt.gz",'wb') as f:
+        f.write(bindata)
