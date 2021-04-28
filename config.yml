@@ -1,5 +1,7 @@
 language: en_core_web_md
 pipeline :
+  - name : SpacyNLP
+    model : external_data/spacy.word2vec.model
   - name : SpacyTokenizer
   - name : CountVectorsFeaturizer
   - name : DIETClassifier
@@ -7,3 +9,6 @@ pipeline :
     random_seed : 2
   - name : EntitySynonymMapper
 
+
+
+  

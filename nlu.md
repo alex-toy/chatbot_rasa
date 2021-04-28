@@ -24,9 +24,9 @@
 - can you tell me about the trends regarding [phones](category)
 - what's going on in the tech world for [laptops](category)
 - can you show me the trends in [laptops](category)
-- show me the latest news for [mobiles](category)
-- update me on the latest [mobiles](category) news
-- Any new releases for [mobiles](category)
+- show me the latest news for [mobiles]{"entity" : "category", "value" : "phone"}
+- update me on the latest [mobiles]{"entity" : "category", "value" : "phone"} news
+- Any new releases for [mobiles]{"entity" : "category", "value" : "phone"}
 
 
 ## intent:goodbye
