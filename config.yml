@@ -1,7 +1,7 @@
 language: en_core_web_md
 pipeline :
   - name : SpacyNLP
-    model : external_data/spacy.word2vec.model
+    model : en_core_web_md
   - name : SpacyTokenizer
   - name : CountVectorsFeaturizer
   - name : DIETClassifier

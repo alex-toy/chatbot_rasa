@@ -26,7 +26,7 @@
 - can you show me the trends in [laptops](category)
 - show me the latest news for [mobiles]{"entity" : "category", "value" : "phone"}
 - update me on the latest [mobiles]{"entity" : "category", "value" : "phone"} news
-- Any new releases for [mobiles]{"entity" : "category", "value" : "phone"}
+- Any new releases for [mobiles](category)
 
 
 ## intent:goodbye
@@ -37,3 +37,19 @@
 - bye
 - talk to you later
 - see you around
+
+
+## synonym:phone
+- mobile
+- mobiles
+- mobile phone
+
+
+## synonym:laptop
+- computer
+- laptops
+- computers
+
+
+## lookup:category
+data/lookup_tables/category.txt
