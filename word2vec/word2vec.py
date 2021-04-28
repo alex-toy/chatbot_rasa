@@ -1,9 +1,14 @@
 from gensim.models import Word2Vec
 import pandas as pd
 import os
+import gzip
 
-from gensim.models import Phrases
+#from gensim.models import Phrases
 from gensim.models.phrases import Phraser
+
+from gensim.test.utils import datapath
+from gensim.models.word2vec import Text8Corpus
+from gensim.models.phrases import Phrases, ENGLISH_CONNECTOR_WORDS
 
 
 if __name__ == "__main__":
@@ -19,5 +24,27 @@ if __name__ == "__main__":
 
     sentence_stream = [doc.split(" ") for doc in reviews_title_text_list]
 
-    print(sentence_stream[0][0:10])
+    #print(sentence_stream[0][0:10])
+
+
+    bigram = Phrases(
+        sentence_stream, 
+        min_count=2, 
+        threshold=5, 
+        connector_words=ENGLISH_CONNECTOR_WORDS
+    )
+    #bigram = Phrases(sentence_stream, min_count=2,threshold = 5, delimiter=b' ')
+    bigram_phraser = Phraser(bigram)
+
+    tokens_list = []
+    for sent in sentence_stream:
+        tokens_ = bigram_phraser[sent]
+        tokens_list.append(tokens_)
     
+    #print(tokens_list[0:5])
+
+    model = Word2Vec(tokens_list, size=200, window=5)
+
+    most_similar_lens = model.wv.most_similar('lens')
+
+    print(most_similar_lens)
