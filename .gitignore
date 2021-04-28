@@ -5,3 +5,7 @@ word2vec/*
 
 models/*
 !models/README.md
+
+
+init_vectors/*
+!init_vectors/README.md
