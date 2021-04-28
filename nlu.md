@@ -13,6 +13,10 @@
 - Please suggest me a good [laptop](category)
 - I wanted to purchase a [phone](category)
 - Can you recommend me a [laptop](category)
+- Can you suggest me a [laptop](category)
+- I'm interested in purchasing a [phone](category)
+- I wanna buy a [phone](category)
+- give me some recommandations for [mobile phones](category)
 
 
 ## intent:latest_news_phones_laptop
@@ -20,6 +24,9 @@
 - can you tell me about the trends regarding [phones](category)
 - what's going on in the tech world for [laptops](category)
 - can you show me the trends in [laptops](category)
+- show me the latest news for [mobiles](category)
+- update me on the latest [mobiles](category) news
+- Any new releases for [mobiles](category)
 
 
 ## intent:goodbye
