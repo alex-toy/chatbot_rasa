@@ -1,7 +1,7 @@
-language : en
+language: en_core_web_md
 pipeline :
   - name : WhitespaceTokenizer
-  - name : CountVectorsTokenizer
+  - name : CountVectorsFeaturizer
   - name : DIETClassifier
     epochs : 200
     random_seed : 2
