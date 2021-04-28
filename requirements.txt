@@ -2,3 +2,5 @@ rasa
 spacy
 rasa-x -i https://pypi.rasa.com/simpl
 gensim
+pandas
+numpy
